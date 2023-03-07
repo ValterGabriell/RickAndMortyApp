@@ -32,9 +32,7 @@ fun CharacterListItem(character: Characters, onItemClick: (Characters) -> Unit) 
         .padding(20.dp)
         .clip(RoundedCornerShape(16f))
         .background(Color.Gray)
-        .clickable {
-            onItemClick(character)
-        }
+
     Row(
         modifier = rowModifier,
         horizontalArrangement = Arrangement.Center
@@ -71,13 +69,6 @@ fun CharacterListItem(character: Characters, onItemClick: (Characters) -> Unit) 
             Text(
                 text = if (character.status == "Alive") "Vivo - ${character.species}" else "Morto - ${character.species}",
                 color = if (character.status == "Alive") Color.Green else Color.Red
-            )
-
-            Text(
-                text = "Origem: ${character.origin?.name}",
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White
             )
 
         }

@@ -70,13 +70,6 @@ fun CharacterDetailScreen(
                     )
 
                     Text(
-                        text = "Origem: ${state.origin?.name}",
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Color.White
-                    )
-
-                    Text(
                         text = "Gênero: ${state.gender}",
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,

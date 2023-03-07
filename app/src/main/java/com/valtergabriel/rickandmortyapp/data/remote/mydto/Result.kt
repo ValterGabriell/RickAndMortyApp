@@ -10,7 +10,6 @@ data class Result(
     var image: String,
     var location: Location,
     var name: String,
-    var origin: Origin,
     var species: String,
     var status: String,
     var type: String,
@@ -19,5 +18,5 @@ data class Result(
 
 
 fun Result.toCharacters(): Characters {
-    return Characters(created, gender, id, image, origin, name, species, status, type, url)
+    return Characters(created, gender, id, image, name, species, status, type, url)
 }
